@@ -12,8 +12,13 @@ import { CiHeadphones } from "react-icons/ci";
 import { TbDeviceGamepad } from "react-icons/tb";
 import Footer from "./footer";
 import Image from "next/image";
+import { FaApple } from "react-icons/fa";
 import Link from "next/link";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { CiHeart } from "react-icons/ci";
+import { FaRegEye } from "react-icons/fa6";
 export default function Home() {
+
   return (
     <div>
       <Navigation />
@@ -21,9 +26,9 @@ export default function Home() {
 
       <hr className="border-gray-300"></hr>
 
-  
+
       <div className="ml-[120px] mr-[120px]  flex">
-        <div className="pt-[20px]">
+        <div className="pt-[20px] w-100">
           <div className="flex space-x-4 pb-[7px]">
             <div><h2>Woman&apos;s Fashion</h2></div>
             <div className="pt-[4px]"><MdKeyboardArrowRight /></div>
@@ -40,27 +45,48 @@ export default function Home() {
           <h2 className="pb-[7px]">Groceries & Pets</h2>
           <h2 className="pb-[7px]">Health & Beauty</h2>
         </div>
-        <div className="w-px bg-gray-300 h-86 mx-30"></div>
-        <div>
-          <Image src={'/image.png'} alt="landing image" width={1200} height={400} className="pt-[10px]" />
+        <div className="w-px bg-gray-300 h-86 mx-20"></div>
+        <div className="flex bg-black w-500 justify-around">
+          <div>
+            <div className="flex mt-12 ml-12">
+              <FaApple className="w-10 h-10 text-white" />
+              <h1 className="text-white ml-2 text-[20px] pt-2">Iphone 14 Series</h1>
+            </div>
+            <h1 className="text-[45px] text-white font-black ml-12 mt-4">Up to 10% <br></br>off Voucher</h1>
+            <div className="flex text-white ml-12 mt-7">
+              <Link href={"/"} className="underline text-white" >Shop Now</Link>
+              <FaArrowRightLong className="ml-2 mt-1" />
+            </div>
+          </div>
+
+          <div>
+            <Image src={'/images/homeimg.svg'} alt="landing image" width={600} height={600} className="pt-[10px]" />
+          </div>
         </div>
       </div>
 
-    
+
       <div className="flex g-0 ml-[120px] mr-[120px] space-x-4 pt-[120px] pb-[20px]">
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Today&apos;s</h1></div>
       </div>
 
-    
+
       <div>
         <FlashSalesCountdown />
       </div>
 
-   
+
       <div className="flex ml-[120px] mr-[120px] pt-[50px] space-x-2">
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+              <p className="bg-red-500 text-white rounded-[3px] p-1">-40%</p>
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -91,6 +117,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+              <p className="bg-red-500 text-white rounded-[3px] p-1">-35%</p>
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -122,6 +155,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+              <p className="bg-red-500 text-white rounded-[3px] p-1">-30%</p>
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -152,6 +192,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 h-90 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+              <p className="bg-red-500 text-white rounded-[3px] p-1">-25%</p>
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -182,7 +229,7 @@ export default function Home() {
       </div>
 
 
- 
+
 
       <div className="flex justify-center items-center h-40 mt-10">
         <button className="bg-red-500 text-white mt-10 p-6 w-90 rounded-[10px]">View All Products</button>
@@ -212,37 +259,37 @@ export default function Home() {
 
 
       <div className="flex space-x-12 ml-[120px] mr-[120px] mt-5">
-        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px]">
+        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px] hover:bg-red-500 hover:text-white">
           <SlScreenSmartphone className="w-10 h-10 pl-[9px]" />
           <h2>Phones</h2>
         </div>
 
-        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px]">
+        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px] hover:bg-red-500 hover:text-white">
           <IoIosLaptop className="w-10 h-10 pl-[15px]" />
           <h2>Computers</h2>
         </div>
 
-        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px]">
+        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px] hover:bg-red-500 hover:text-white">
           <BsSmartwatch className="w-11 h-11 pl-[25px]" />
           <h2>SmartWatch</h2>
         </div>
 
-        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px]">
+        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px] hover:bg-red-500 hover:text-white">
           <CiCamera className="w-10 h-10 pl-[9px]" />
           <h2>Camera</h2>
         </div>
-        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px]">
+        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px] hover:bg-red-500 hover:text-white">
           <CiHeadphones className="w-10 h-10 pl-[9px]" />
           <h2>HeadPhones</h2>
         </div>
-        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px]">
+        <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px] hover:bg-red-500 hover:text-white">
           <TbDeviceGamepad className="w-10 h-10 pl-[9px]" />
           <h2>Gaming</h2>
         </div>
       </div>
 
 
-    
+
 
       <hr className="border-gray-300 mt-20"></hr>
 
@@ -252,7 +299,7 @@ export default function Home() {
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">This Month</h1></div>
       </div>
 
-  
+
 
       <div className="flex ml-[120px] mr-[120px] space-x-250">
         <div>
@@ -267,6 +314,12 @@ export default function Home() {
       <div className="flex ml-[120px] mr-[120px] pt-[50px] space-x-2">
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -293,6 +346,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -319,6 +379,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -344,6 +411,12 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 h-90 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -401,7 +474,7 @@ export default function Home() {
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Our Products</h1></div>
       </div>
- 
+
 
       <div className="flex ml-[120px] mr-[120px] space-x-250">
         <div>
@@ -415,6 +488,13 @@ export default function Home() {
       <div className="flex ml-[120px] mr-[120px] pt-[50px] space-x-2">
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -446,6 +526,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -476,6 +563,12 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -505,6 +598,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 h-90 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+
+              <div>
+                <CiHeart className="ml-85" />
+                <FaRegEye className="ml-85" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -539,6 +639,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -575,6 +682,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -612,6 +726,13 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -647,6 +768,12 @@ export default function Home() {
 
         <div className="relative group bg-white rounded p-4 shadow w-100 h-90 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
+            <div className="absolute overflow-visble flex justify-between">
+              <div>
+                <CiHeart className="ml-70" />
+                <FaRegEye className="ml-70" />
+              </div>
+            </div>
             <Image
               width={400}
               height={400}
@@ -684,7 +811,7 @@ export default function Home() {
       </div>
 
 
-   
+
       <div className="flex g-0 ml-[120px] mr-[120px] space-x-4 pt-[30px] pb-[20px]">
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Featured</h1></div>
@@ -736,7 +863,7 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
 
