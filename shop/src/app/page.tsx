@@ -1,4 +1,3 @@
-import { IoMdArrowDropdown } from "react-icons/io"
 import Navigation from "./sharedComponents/navigation";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { MdOutlineStar } from "react-icons/md";
@@ -25,18 +24,18 @@ export default function Home() {
       <div className="ml-[120px] mr-[120px]  flex">
         <div className="pt-[20px]">
           <div className="flex space-x-4 pb-[7px]">
-            <div><h2>Woman’s Fashion</h2></div>
+            <div><h2>Woman&apos;s Fashion</h2></div>
             <div className="pt-[4px]"><MdKeyboardArrowRight /></div>
           </div>
           <div className="flex space-x-10 pb-[7px]">
-            <div><h2>Men’s Fashion</h2></div>
+            <div><h2>Men&apos;s Fashion</h2></div>
             <div className="pt-[4px]"><MdKeyboardArrowRight /></div>
           </div>
           <h2 className="pb-[7px]">Electronics</h2>
           <h2 className="pb-[7px]">Home & Lifestyle</h2>
           <h2 className="pb-[7px]">Medicine</h2>
           <h2 className="pb-[7px]">Sports & Outdoor</h2>
-          <h2 className="pb-[7px]">Baby’s & Toys</h2>
+          <h2 className="pb-[7px]">Baby&apos;s & Toys</h2>
           <h2 className="pb-[7px]">Groceries & Pets</h2>
           <h2 className="pb-[7px]">Health & Beauty</h2>
         </div>
@@ -49,7 +48,7 @@ export default function Home() {
       {/* text and vertical red line */}
       <div className="flex g-0 ml-[120px] mr-[120px] space-x-4 pt-[120px] pb-[20px]">
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
-        <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Today's</h1></div>
+        <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Today&apos;s</h1></div>
       </div>
 
       {/* flash sales and date time */}
