@@ -12,15 +12,16 @@ import { CiHeadphones } from "react-icons/ci";
 import { TbDeviceGamepad } from "react-icons/tb";
 import Footer from "./footer";
 import Image from "next/image";
+import Link from "next/link";
 export default function Home() {
   return (
     <div>
       <Navigation />
-      {/* hr */}
+
 
       <hr className="border-gray-300"></hr>
 
-      {/* content and image */}
+  
       <div className="ml-[120px] mr-[120px]  flex">
         <div className="pt-[20px]">
           <div className="flex space-x-4 pb-[7px]">
@@ -45,18 +46,18 @@ export default function Home() {
         </div>
       </div>
 
-      {/* text and vertical red line */}
+    
       <div className="flex g-0 ml-[120px] mr-[120px] space-x-4 pt-[120px] pb-[20px]">
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Today&apos;s</h1></div>
       </div>
 
-      {/* flash sales and date time */}
+    
       <div>
         <FlashSalesCountdown />
       </div>
 
-      {/* products */}
+   
       <div className="flex ml-[120px] mr-[120px] pt-[50px] space-x-2">
         <div className="relative group bg-white rounded p-4 shadow w-100 shadow-[rgba(0,0,0,0.4)]">
           <div className="relative">
@@ -181,25 +182,22 @@ export default function Home() {
       </div>
 
 
-      {/* view all products button */}
+ 
 
       <div className="flex justify-center items-center h-40 mt-10">
         <button className="bg-red-500 text-white mt-10 p-6 w-90 rounded-[10px]">View All Products</button>
       </div>
 
-      {/* hr */}
+
 
       <hr className="border-gray-300 mt-20"></hr>
 
-      {/* text and vertical red line */}
+
       <div className="flex g-0 ml-[120px] mr-[120px] space-x-4 pt-[30px] pb-[20px]">
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Categories</h1></div>
       </div>
 
-
-      {/* 
-      browse text and icons */}
 
       <div className="flex ml-[120px] mr-[120px] space-x-250">
         <div>
@@ -211,7 +209,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* the icon boxes */}
+
 
       <div className="flex space-x-12 ml-[120px] mr-[120px] mt-5">
         <div className="border w-50 h-40 rounded-[5px] pt-[50px] pl-[70px]">
@@ -244,18 +242,17 @@ export default function Home() {
       </div>
 
 
-      {/* hr */}
+    
 
       <hr className="border-gray-300 mt-20"></hr>
 
-      {/* text and vertical red line */}
+
       <div className="flex g-0 ml-[120px] mr-[120px] space-x-4 pt-[30px] pb-[20px]">
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">This Month</h1></div>
       </div>
 
-      {/* 
-      browse text and button */}
+  
 
       <div className="flex ml-[120px] mr-[120px] space-x-250">
         <div>
@@ -400,13 +397,11 @@ export default function Home() {
       </div>
 
 
-      {/* text and vertical red line */}
       <div className="flex g-0 ml-[120px] mr-[120px] space-x-4 pt-[30px] pb-[20px]">
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Our Products</h1></div>
       </div>
-      {/* 
-      browse text and icons */}
+ 
 
       <div className="flex ml-[120px] mr-[120px] space-x-250">
         <div>
@@ -684,14 +679,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* view all products button */}
-
       <div className="flex justify-center items-center h-40 mt-10">
         <button className="bg-red-500 text-white mt-10 p-6 w-90 rounded-[10px]">View All Products</button>
       </div>
 
 
-      {/* text and vertical red line */}
+   
       <div className="flex g-0 ml-[120px] mr-[120px] space-x-4 pt-[30px] pb-[20px]">
         <div className="w-[30px] bg-red-500 h-16 rounded-[10px] p-none"></div>
         <div><h1 className="text-red-500 pt-[20px] font-black text-[25px]">Featured</h1></div>
