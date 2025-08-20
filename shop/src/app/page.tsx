@@ -822,17 +822,40 @@ export default function Home() {
 
       <div className="flex ml-[120px] mr-[120px] space-x-20 mb-20">
         <div className="bg-black">
+          <div className="absolute overflow-visible text-white mt-160 ml-10">
+            <h1 className="font-black text-[25px]">PlayStation 5</h1>
+            <p className="text-[23px]">Black and White version of the PS5<br></br>coming out on sale.</p>
+            <button className="underline font-black text-[20px] ">Shop Now</button>
+          </div>
+
           <Image src='/images/spea.svg' alt="big speakers" width={700} height={700} />
         </div>
         <div>
-          <div className="bg-black">
+          <div className="bg-black flex">
+            <div>
+              <div className=" text-white mt-16 ml-10 w-90">
+                <h1 className="font-black text-[25px]">Women’s Collections</h1>
+                <p className="text-[23px]">Featured woman collections that <br></br>give you another vibe.</p>
+                <button className="underline font-black text-[20px] ">Shop Now</button>
+              </div>
+            </div>
             <Image src='/images/woman.svg' width={500} height={400} alt='woman image' />
           </div>
           <div className="flex mt-10 space-x-20">
             <div className="bg-black">
+              <div className="absolute overflow-visible text-white mt-70 ml-5">
+                <h1 className="font-black text-[25px]">Speakers</h1>
+                <p className="text-[23px]">Amazon wireless speakers</p>
+                <button className="underline font-black text-[20px] ">Shop Now</button>
+              </div>
               <Image src='/images/speaker.svg' alt='speaker' width={400} height={400} />
             </div>
             <div className="bg-black">
+              <div className="absolute overflow-visible text-white mt-70 ml-5">
+                <h1 className="font-black text-[25px]">Perfume</h1>
+                <p className="text-[23px]">GUCCI INTENSE OUD EDP</p>
+                <button className="underline font-black text-[20px] ">Shop Now</button>
+              </div>
               <Image src='/images/perfume.svg' alt='perfume Gucci' width={400} height={400} />
             </div>
           </div>
